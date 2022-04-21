@@ -20,8 +20,7 @@ func main() {
 			for i := 0; i < len(res); i++ {
 				num, err := strconv.ParseInt(res[i], 10, 64)
 				if err != nil {
-					//fmt.Println("Начальный массив:\n", arr)
-					break
+					return
 				} else {
 					arr = append(arr, num)
 				}
